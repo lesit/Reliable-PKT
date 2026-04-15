@@ -1,5 +1,10 @@
-# Reliable-KT
-Code for the paper: **Ensuring Reliability in Programming Knowledge Tracing: A Re-evaluation of Attention-augmented Models and Experimental Protocols**
+# Code for the paper
+
+**Ensuring Reliability in Programming Knowledge Tracing:  
+A Re-evaluation of Attention-augmented Models and Experimental Protocols**
+
+Accepted at the International Conference on Intelligent Tutoring Systems (ITS 2026).  
+To appear in Springer.
 
 ## Setup
 - Please note that this runs on GPUs
