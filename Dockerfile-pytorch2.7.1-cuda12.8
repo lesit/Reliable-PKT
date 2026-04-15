@@ -1,0 +1,39 @@
+FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-devel
+
+ARG UID=1000
+ARG USERNAME=user
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    sudo \
+    wget \
+    git \
+    build-essential \
+    ca-certificates \
+    bzip2 \
+    zip \
+&& rm -rf /var/lib/apt/lists/*
+
+# Set up time zone.
+ARG DEBIAN_FRONTEND=noninteractive
+
+ENV TZ=Asia/Seoul
+RUN apt update && apt install -y tzdata && \
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
+    dpkg-reconfigure --frontend noninteractive tzdata && \
+    rm -rf /var/lib/apt/lists/*
+
+# Ensure pip installs packages in conda's environment, not ~/.local
+ENV PIP_CONFIG_FILE=/dev/null
+
+# Create a new user with sudo privileges
+RUN useradd -m -s /bin/bash $USERNAME -u $UID \
+    && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
+    && usermod -aG sudo $USERNAME
+
+# Switch to the new user
+USER $USERNAME
+WORKDIR /home/$USERNAME
+
+# Set the default command
+CMD ["/bin/bash"]

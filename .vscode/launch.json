@@ -1,0 +1,209 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nothing",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/exps",
+            "args": [
+                "--smoke_test"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "CodeDKT_ECKT: train_hp_tune_cv.py no_w0 msl_tune att_dim_valid",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/train_hp_tune_cv.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--model_type", "codedkt",
+                "--msl_tune",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+        {
+            "name": "CodeDKT_ECKT: train_hp_tune_cv.py no_w0 msl_tune att_dim_org",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/train_hp_tune_cv.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--model_type", "codedkt",
+                "--msl_tune",
+                "--att_dim_org"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+        {
+            "name": "CodeDKT_ECKT: train_hp_tune_cv.py codedkt no_w0 all_grid att_dim_valid",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/train_hp_tune_cv.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--model_type", "codedkt",
+                "--all_grid",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+        {
+            "name": "CodeDKT_ECKT: train_hp_tune_cv.py codedkt no_w0 all_grid att_dim_org",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/train_hp_tune_cv.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--model_type", "codedkt",
+                "--all_grid",
+                "--att_dim_org"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+
+        {
+            "name": "CodeDKT_ECKT: train_hp_tune_cv.py CodeDKT_ECKT",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/train_hp_tune_cv.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--model_type", "CodeDKT_ECKT",
+                "--all_grid",
+                "--msl", "100",
+                "--att_dim_valid",
+                "--has_w0",
+                "--compare_dir", "/home/user/project/results/hp_grid_emb_size_[50,100,150,300,350]-dropout_[0.1,0.2,0.3,0.4,0.5]-learning_rate_[5e-05,0.0001,0.0005]-msl_50"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+
+        {
+            "name": "CodeDKT_ECKT: preprocess_train_test.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/preprocess_train_test.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+        {
+            "name": "CodeDKT_ECKT: create_problem_difficulty.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/create_problem_difficulty.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "CodeDKT_ECKT: save_knowledge_emb.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/save_knowledge_emb.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "CodeDKT_ECKT: make_code_ast_path.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/CodeDKT_ECKT/make_code_ast_path.py",
+            "cwd": "${workspaceFolder}/exps/CodeDKT_ECKT",
+            "args": [
+                "--skip_extract_exist"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+
+        {
+            "name": "Code-DKT-org code-dkt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/Code-DKT-org/src/run.py",
+            "cwd": "${workspaceFolder}/exps/Code-DKT-org/src",
+            "args": [
+                "--gpu_id", "1",
+                "--valid_att_dim"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Code-DKT-org dkt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/Code-DKT-org/src/run.py",
+            "cwd": "${workspaceFolder}/exps/Code-DKT-org/src",
+            "args": [
+                "--gpu_id", "0",
+                "--dkt",
+                "--sort_by_time"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Code-DKT-org preprocessing",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/Code-DKT-org/src/preprocessing.py",
+            "cwd": "${workspaceFolder}/exps/Code-DKT-org/src",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Code-DKT-org path_extractor",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/Code-DKT-org/src/path_extractor.py",
+            "cwd": "${workspaceFolder}/exps/Code-DKT-org/src",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "stat_attempts.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/stat_attempts.py",
+            "cwd": "${workspaceFolder}/exps",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+        {
+            "name": "split_student_ids.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exps/split_student_ids.py",
+            "cwd": "${workspaceFolder}/exps",
+            "args": [
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+    ]
+}

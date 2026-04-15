@@ -1,0 +1,14 @@
+tqdm
+ray[tune]
+pandas
+matplotlib
+einops==0.8.1
+scikit-learn
+anytree
+optuna
+seaborn
+transformers==4.51.3
+accelerate
+ipykernel
+omegaconf
+wandb
