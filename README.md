@@ -1,10 +1,10 @@
-# Code for the paper
+# Ensuring Reliability in Programming Knowledge Tracing: A Re-evaluation of Attention-augmented Models and Experimental Protocols
 
-**Ensuring Reliability in Programming Knowledge Tracing:  
-A Re-evaluation of Attention-augmented Models and Experimental Protocols**
+Official implementation of the paper accepted at the International Conference on Intelligent Tutoring Systems (ITS 2026), to appear in Springer LNCS.
 
-Accepted at the International Conference on Intelligent Tutoring Systems (ITS 2026).  
-To appear in Springer.
+## Paper
+
+Preprint available on arXiv: [arXiv link]
 
 ## Setup
 - Please note that this runs on GPUs
