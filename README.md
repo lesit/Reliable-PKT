@@ -4,7 +4,21 @@ Official implementation of the paper accepted at the International Conference on
 
 ## Paper
 
-Preprint available on arXiv: [arXiv link]
+Preprint available on arXiv: http://arxiv.org/abs/2605.04727
+
+## Citation
+
+```bibtex
+@misc{kim2026ensuringreliabilityprogrammingknowledge,
+      title={Ensuring Reliability in Programming Knowledge Tracing: A Re-evaluation of Attention-augmented Models and Experimental Protocols}, 
+      author={Jaewook Kim and Hyeoncheol Kim},
+      year={2026},
+      eprint={2605.04727},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.04727}, 
+}
+```
 
 ## Setup
 - Please note that this runs on GPUs
